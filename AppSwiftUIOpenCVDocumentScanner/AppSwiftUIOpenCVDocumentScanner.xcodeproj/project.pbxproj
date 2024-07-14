@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56C0CDC32C44157400697F41 /* AppSwiftUIOpenCVDocumentScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CDC22C44157400697F41 /* AppSwiftUIOpenCVDocumentScannerApp.swift */; };
+		56C0CDC52C44157400697F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CDC42C44157400697F41 /* ContentView.swift */; };
+		56C0CDC72C44157700697F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C0CDC62C44157700697F41 /* Assets.xcassets */; };
+		56C0CDCA2C44157700697F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C0CDC92C44157700697F41 /* Preview Assets.xcassets */; };
+		56C0CDD42C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CDD32C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.swift */; };
+		56C0CDDE2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CDDD2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.swift */; };
+		56C0CDE02C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CDDF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift */; };
+		56C0CE142C44437700697F41 /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = 56C0CE132C44437700697F41 /* OpenCV */; };
+		56C0CE182C44468000697F41 /* DocumetScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CE162C44468000697F41 /* DocumetScanner.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56C0CDD02C44157800697F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C0CDB72C44157300697F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C0CDBE2C44157400697F41;
+			remoteInfo = AppSwiftUIOpenCVDocumentScanner;
+		};
+		56C0CDDA2C44157800697F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C0CDB72C44157300697F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C0CDBE2C44157400697F41;
+			remoteInfo = AppSwiftUIOpenCVDocumentScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56C0CDBF2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSwiftUIOpenCVDocumentScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C0CDC22C44157400697F41 /* AppSwiftUIOpenCVDocumentScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftUIOpenCVDocumentScannerApp.swift; sourceTree = "<group>"; };
+		56C0CDC42C44157400697F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56C0CDC62C44157700697F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56C0CDC92C44157700697F41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56C0CDCF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSwiftUIOpenCVDocumentScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C0CDD32C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftUIOpenCVDocumentScannerTests.swift; sourceTree = "<group>"; };
+		56C0CDD92C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSwiftUIOpenCVDocumentScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C0CDDD2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftUIOpenCVDocumentScannerUITests.swift; sourceTree = "<group>"; };
+		56C0CDDF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56C0CDF32C4427A400697F41 /* libMyFuncInC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyFuncInC.a; path = ../OpenCVDocumentScanner/OpenCVDocumentScanner/libMyFuncInC.a; sourceTree = "<group>"; };
+		56C0CDF92C4428D400697F41 /* libaMyFuncInC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaMyFuncInC.a; path = ../OpenCVDocumentScanner/OpenCVDocumentScanner/libaMyFuncInC.a; sourceTree = "<group>"; };
+		56C0CE152C44468000697F41 /* AppSwiftUIOpenCVDocumentScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppSwiftUIOpenCVDocumentScanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		56C0CE162C44468000697F41 /* DocumetScanner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DocumetScanner.cpp; sourceTree = "<group>"; };
+		56C0CE172C44468000697F41 /* DocumetScanner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DocumetScanner.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56C0CDBC2C44157400697F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C0CE142C44437700697F41 /* OpenCV in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDCC2C44157800697F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDD62C44157800697F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56C0CDB62C44157300697F41 = {
+			isa = PBXGroup;
+			children = (
+				56C0CE162C44468000697F41 /* DocumetScanner.cpp */,
+				56C0CE172C44468000697F41 /* DocumetScanner.hpp */,
+				56C0CDC12C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */,
+				56C0CDD22C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests */,
+				56C0CDDC2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests */,
+				56C0CDC02C44157400697F41 /* Products */,
+				56C0CDF22C4427A400697F41 /* Frameworks */,
+				56C0CE152C44468000697F41 /* AppSwiftUIOpenCVDocumentScanner-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		56C0CDC02C44157400697F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDBF2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner.app */,
+				56C0CDCF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.xctest */,
+				56C0CDD92C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56C0CDC12C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDC22C44157400697F41 /* AppSwiftUIOpenCVDocumentScannerApp.swift */,
+				56C0CDC42C44157400697F41 /* ContentView.swift */,
+				56C0CDC62C44157700697F41 /* Assets.xcassets */,
+				56C0CDC82C44157700697F41 /* Preview Content */,
+			);
+			path = AppSwiftUIOpenCVDocumentScanner;
+			sourceTree = "<group>";
+		};
+		56C0CDC82C44157700697F41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDC92C44157700697F41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56C0CDD22C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDD32C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.swift */,
+			);
+			path = AppSwiftUIOpenCVDocumentScannerTests;
+			sourceTree = "<group>";
+		};
+		56C0CDDC2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDDD2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.swift */,
+				56C0CDDF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift */,
+			);
+			path = AppSwiftUIOpenCVDocumentScannerUITests;
+			sourceTree = "<group>";
+		};
+		56C0CDF22C4427A400697F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C0CDF92C4428D400697F41 /* libaMyFuncInC.a */,
+				56C0CDF32C4427A400697F41 /* libMyFuncInC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56C0CDBE2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C0CDE32C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScanner" */;
+			buildPhases = (
+				56C0CDBB2C44157400697F41 /* Sources */,
+				56C0CDBC2C44157400697F41 /* Frameworks */,
+				56C0CDBD2C44157400697F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppSwiftUIOpenCVDocumentScanner;
+			packageProductDependencies = (
+				56C0CE132C44437700697F41 /* OpenCV */,
+			);
+			productName = AppSwiftUIOpenCVDocumentScanner;
+			productReference = 56C0CDBF2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56C0CDCE2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C0CDE62C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScannerTests" */;
+			buildPhases = (
+				56C0CDCB2C44157800697F41 /* Sources */,
+				56C0CDCC2C44157800697F41 /* Frameworks */,
+				56C0CDCD2C44157800697F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C0CDD12C44157800697F41 /* PBXTargetDependency */,
+			);
+			name = AppSwiftUIOpenCVDocumentScannerTests;
+			productName = AppSwiftUIOpenCVDocumentScannerTests;
+			productReference = 56C0CDCF2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56C0CDD82C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C0CDE92C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScannerUITests" */;
+			buildPhases = (
+				56C0CDD52C44157800697F41 /* Sources */,
+				56C0CDD62C44157800697F41 /* Frameworks */,
+				56C0CDD72C44157800697F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C0CDDB2C44157800697F41 /* PBXTargetDependency */,
+			);
+			name = AppSwiftUIOpenCVDocumentScannerUITests;
+			productName = AppSwiftUIOpenCVDocumentScannerUITests;
+			productReference = 56C0CDD92C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56C0CDB72C44157300697F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					56C0CDBE2C44157400697F41 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					56C0CDCE2C44157800697F41 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 56C0CDBE2C44157400697F41;
+					};
+					56C0CDD82C44157800697F41 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 56C0CDBE2C44157400697F41;
+					};
+				};
+			};
+			buildConfigurationList = 56C0CDBA2C44157300697F41 /* Build configuration list for PBXProject "AppSwiftUIOpenCVDocumentScanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56C0CDB62C44157300697F41;
+			packageReferences = (
+				56C0CE122C44437700697F41 /* XCRemoteSwiftPackageReference "opencv-spm" */,
+			);
+			productRefGroup = 56C0CDC02C44157400697F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C0CDBE2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */,
+				56C0CDCE2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests */,
+				56C0CDD82C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56C0CDBD2C44157400697F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C0CDCA2C44157700697F41 /* Preview Assets.xcassets in Resources */,
+				56C0CDC72C44157700697F41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDCD2C44157800697F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDD72C44157800697F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56C0CDBB2C44157400697F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C0CE182C44468000697F41 /* DocumetScanner.cpp in Sources */,
+				56C0CDC52C44157400697F41 /* ContentView.swift in Sources */,
+				56C0CDC32C44157400697F41 /* AppSwiftUIOpenCVDocumentScannerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDCB2C44157800697F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C0CDD42C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C0CDD52C44157800697F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C0CDDE2C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITests.swift in Sources */,
+				56C0CDE02C44157800697F41 /* AppSwiftUIOpenCVDocumentScannerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56C0CDD12C44157800697F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C0CDBE2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */;
+			targetProxy = 56C0CDD02C44157800697F41 /* PBXContainerItemProxy */;
+		};
+		56C0CDDB2C44157800697F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C0CDBE2C44157400697F41 /* AppSwiftUIOpenCVDocumentScanner */;
+			targetProxy = 56C0CDDA2C44157800697F41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		56C0CDE12C44157800697F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56C0CDE22C44157800697F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56C0CDE42C44157800697F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppSwiftUIOpenCVDocumentScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppSwiftUIOpenCVDocumentScanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56C0CDE52C44157800697F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppSwiftUIOpenCVDocumentScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppSwiftUIOpenCVDocumentScanner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56C0CDE72C44157800697F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppSwiftUIOpenCVDocumentScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppSwiftUIOpenCVDocumentScanner";
+			};
+			name = Debug;
+		};
+		56C0CDE82C44157800697F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppSwiftUIOpenCVDocumentScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppSwiftUIOpenCVDocumentScanner";
+			};
+			name = Release;
+		};
+		56C0CDEA2C44157800697F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppSwiftUIOpenCVDocumentScanner;
+			};
+			name = Debug;
+		};
+		56C0CDEB2C44157800697F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6KDBC2B2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uzupis.AppSwiftUIOpenCVDocumentScanner.AppSwiftUIOpenCVDocumentScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppSwiftUIOpenCVDocumentScanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56C0CDBA2C44157300697F41 /* Build configuration list for PBXProject "AppSwiftUIOpenCVDocumentScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C0CDE12C44157800697F41 /* Debug */,
+				56C0CDE22C44157800697F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C0CDE32C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C0CDE42C44157800697F41 /* Debug */,
+				56C0CDE52C44157800697F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C0CDE62C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C0CDE72C44157800697F41 /* Debug */,
+				56C0CDE82C44157800697F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C0CDE92C44157800697F41 /* Build configuration list for PBXNativeTarget "AppSwiftUIOpenCVDocumentScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C0CDEA2C44157800697F41 /* Debug */,
+				56C0CDEB2C44157800697F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56C0CE122C44437700697F41 /* XCRemoteSwiftPackageReference "opencv-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeatse/opencv-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56C0CE132C44437700697F41 /* OpenCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56C0CE122C44437700697F41 /* XCRemoteSwiftPackageReference "opencv-spm" */;
+			productName = OpenCV;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 56C0CDB72C44157300697F41 /* Project object */;
+}

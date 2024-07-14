@@ -8,7 +8,7 @@
 import Foundation
 import AVFoundation
 import UIKit
-import OpenCV
+import opencv2_dependencies
 
 public class CameraManager: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     

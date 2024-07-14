@@ -13,6 +13,8 @@
 		563307412C41A6E0002C55BF /* OpenCVDocumentScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 563307332C41A6DF002C55BF /* OpenCVDocumentScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5633074B2C41A71E002C55BF /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5633074A2C41A71E002C55BF /* CameraManager.swift */; };
 		5633074E2C41A987002C55BF /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = 5633074D2C41A987002C55BF /* OpenCV */; };
+		56C0CE102C443E0700697F41 /* DocumentScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C0CE0E2C443E0700697F41 /* DocumentScanner.cpp */; };
+		56C0CE112C443E0700697F41 /* DocumentScanner.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56C0CE0F2C443E0700697F41 /* DocumentScanner.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		5633073A2C41A6E0002C55BF /* OpenCVDocumentScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVDocumentScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5633073F2C41A6E0002C55BF /* OpenCVDocumentScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVDocumentScannerTests.swift; sourceTree = "<group>"; };
 		5633074A2C41A71E002C55BF /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		56C0CE0E2C443E0700697F41 /* DocumentScanner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DocumentScanner.cpp; sourceTree = "<group>"; };
+		56C0CE0F2C443E0700697F41 /* DocumentScanner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DocumentScanner.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				563307332C41A6DF002C55BF /* OpenCVDocumentScanner.h */,
 				563307342C41A6DF002C55BF /* OpenCVDocumentScanner.docc */,
 				5633074A2C41A71E002C55BF /* CameraManager.swift */,
+				56C0CE0E2C443E0700697F41 /* DocumentScanner.cpp */,
+				56C0CE0F2C443E0700697F41 /* DocumentScanner.hpp */,
 			);
 			path = OpenCVDocumentScanner;
 			sourceTree = "<group>";
@@ -97,6 +103,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C0CE112C443E0700697F41 /* DocumentScanner.hpp in Headers */,
 				563307412C41A6E0002C55BF /* OpenCVDocumentScanner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +162,7 @@
 				TargetAttributes = {
 					5633072F2C41A6DF002C55BF = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					563307392C41A6E0002C55BF = {
 						CreatedOnToolsVersion = 15.2;
@@ -207,6 +215,7 @@
 			files = (
 				5633074B2C41A71E002C55BF /* CameraManager.swift in Sources */,
 				563307352C41A6DF002C55BF /* OpenCVDocumentScanner.docc in Sources */,
+				56C0CE102C443E0700697F41 /* DocumentScanner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +366,7 @@
 		563307452C41A6E0002C55BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -380,6 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +399,7 @@
 		563307462C41A6E0002C55BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
